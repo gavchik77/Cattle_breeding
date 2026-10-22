@@ -1,19 +1,14 @@
-# Cattle Breeding & Genetic Resilience Lab
+# Cattle Breeding & Genetic Resilience Lab v1.1
 
-Independent educational population-genetics simulator for GitHub Pages, inspired by the *teaching approach* of animated population genetics simulations. All code is contained in `index.html`; no server, third-party library, tracking, or external data dependency.
+Upload `index.html` and `LICENSE` to a GitHub repository root and enable GitHub Pages. No external dependencies.
 
-## Publish
+## Updated teaching model
+- Breeder A selection index: 60% milk yield, 40% milk solids. Breeder B: 25% yield, 20% solids, 15% disease resistance, 15% heat tolerance, 15% docility, 10% low maintenance.
+- Breeding parents chosen as a percentage of the herd (sex-balanced approximations).
+- Starting-herd SI summary at generation zero.
+- M–D linkage visualization.
+- Cattle stand on grass, occasionally lower heads to graze, and move gently.
+- Challenges are non-destructive assessments of expected survivors, and breeding remains available.
+- Seven simplified loci; index values are pedagogical, not breeding-value estimates.
 
-Create a public GitHub repository, add `index.html` to its root, then enable **Settings → Pages → Deploy from a branch → main → /(root)**. Or open `index.html` locally.
-
-## Classroom experiment
-
-Two herds begin with exactly the same randomly generated individual cattle. Breeder A emphasises milk potential, size, and docility using few parents; breeder B balances those traits against disease resistance and heat tolerance and has more breeding parents. Advance generations, expose to disease/heat challenge, press *Record current results*, and export raw CSV. The app **does not calculate differences or allele loss for students**.
-
-Change parent numbers and recombination to isolate drift, selection and linkage; use the seed to replicate runs. The scenario deliberately introduces initial negative linkage disequilibrium between milk and resistance alleles. Production selection does *not* invariably remove resilience. The five loci, parameter weights, and stress survival function are invented pedagogical assumptions, not empirical cattle estimates. Real traits are polygenic, environmental and often complex.
-
-## Sources and limitations
-
-Scientific motivation: FAO Second Global Assessment of Animal Genetic Resources; FAO 2010 *Breeding Strategies for Sustainable Management of Animal Genetic Resources*; FAO *Animal Genetic Resources and Adaptation*. This app is neither endorsed by FAO nor an FAO model.
-
-Educational software, freely usable and modifiable under MIT licence (see LICENSE).
+The initial association between production and resistance is a deliberate model assumption and is not a general biological rule.
