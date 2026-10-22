@@ -14,3 +14,15 @@ Selection is by a percentage of candidates. Challenge events now cause stochasti
 - A candidate gene, QTL association, and demonstrated causal mutation are not interchangeable.
 
 This is an educational illustration; real dairy traits and resistance are highly polygenic, and any exact mortality probabilities depend on pathogen, management, exposure and other conditions.
+
+
+## v1.4 losses and effective population size
+
+A new livestock-loss ledger records exposure, deaths and survivors after every disease/heat challenge. Cumulative deaths are shown for each herd, and a separate CSV exports challenge events. Calendar years and monetary losses are not inferred. Herd replacement through breeding does not erase previous losses. Each breeder's panel now shows the numbers of male/female parents selected and approximate Ne = 4NmNf / (Nm + Nf). This is an elementary sex-ratio approximation, not a pedigree-based or genomic estimate.
+
+
+## New in v1.4
+
+- Added an automatic history graph for current herd size and cumulative deaths for Breeder A and Breeder B.
+- The graph updates after each breeding generation, after breeding to the selected target generation, and after each challenge event.
+- This graph is intended to help students follow accumulating losses over time without converting outcomes into money.
