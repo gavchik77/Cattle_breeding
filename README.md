@@ -1,14 +1,16 @@
-# Cattle Breeding & Genetic Resilience Lab v1.1
+# Cattle Breeding & Genetic Resilience Lab v1.2
 
-Upload `index.html` and `LICENSE` to a GitHub repository root and enable GitHub Pages. No external dependencies.
+Upload `index.html` to a GitHub Pages repository root. This standalone simulation uses no external packages.
 
-## Updated teaching model
-- Breeder A selection index: 60% milk yield, 40% milk solids. Breeder B: 25% yield, 20% solids, 15% disease resistance, 15% heat tolerance, 15% docility, 10% low maintenance.
-- Breeding parents chosen as a percentage of the herd (sex-balanced approximations).
-- Starting-herd SI summary at generation zero.
-- M–D linkage visualization.
-- Cattle stand on grass, occasionally lower heads to graze, and move gently.
-- Challenges are non-destructive assessments of expected survivors, and breeding remains available.
-- Seven simplified loci; index values are pedagogical, not breeding-value estimates.
+## Teaching design
+Two herds start with identical animals. Breeder A targets milk yield SI 86–100 and milk solids SI 80–100. Breeder B targets balanced SI 70–80; the default index is milk yield 25%, milk solids 20%, disease marker 15%, heat marker 15%, docility 15%, low maintenance 10%. SI values are illustrative 0–100 genetic teaching scores, not cattle EBVs.
 
-The initial association between production and resistance is a deliberate model assumption and is not a general biological rule.
+Selection is by a percentage of candidates. Challenge events now cause stochastic actual deaths and animals are removed from the living herd. You can breed survivors further. The challenge slider scales exposure.
+
+### Science notes
+- Disease scenario is deliberately severe and illustrative, with per-animal mortality varying by simulated resistance marker; it does not predict deaths from any specific pathogen.
+- Heat assumes a model 2% baseline event mortality and up to a 20% *relative increase* (2.4% total), not 20% absolute deaths.
+- DGAT1 and PLAG1 are on BTA14; BoLA/MHC is on BTA23; LEP is on BTA4; GHR is on BTA20. The illustrated M-D linkage model uses a **hypothetical** nearby D marker on BTA14, not BoLA or a verified named disease locus.
+- A candidate gene, QTL association, and demonstrated causal mutation are not interchangeable.
+
+This is an educational illustration; real dairy traits and resistance are highly polygenic, and any exact mortality probabilities depend on pathogen, management, exposure and other conditions.
